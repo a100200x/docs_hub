@@ -58,11 +58,13 @@ git push --set-upstream origin master
 ```
  
 ## В каждом новом терминале (в том чисте при повторном открытии проекта в VSCode)
+Запустить агента и добавить ssh ключ
 ```
 eval "$(ssh-agent -s)"
 
 ssh-add 'c:/.../.../github_a100200x/.ssh/id_ed25519_github'
 ``` 
+Проверить подключение к гитхабу
 ```
 git remote -v
 ```
