@@ -24,11 +24,6 @@ git commit -m 'initial'
 например https://github.com/a100200x/books_app.git
 
 
-## создать (на локальной) ключ ssh и сохранить его в акаунте гитхаба
-https://github.com/settings/keys
-инструкция - https://docs.github.com/ru/authentication/connecting-to-github-with-ssh
-
-
 ## настроить ssh (на локальной)
 
 -активировать агента на локальной 
