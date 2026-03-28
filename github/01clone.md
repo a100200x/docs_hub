@@ -13,11 +13,11 @@ https://github.com/settings/keys
 или создать ную папку (на локальной)
 
 инициализировать гит, добавть файлы и закоммитить их:
-'''
+```
 git init
 git add .
 git commit -m 'initial'
-'''
+```
 
 ## создать репозиторий в гитхабе
 
@@ -26,24 +26,33 @@ git commit -m 'initial'
 
 ## настроить ssh (на локальной)
 
--активировать агента на локальной 
+- запустить агента на локальной 
+```
 eval "$(ssh-agent -s)"
-
+```
 - добавить ключ
+```
 ssh-add "C:/.../.../github_a100200x/.ssh/id_ed25519_github"
+```
 
 - подключиться к гитхабу
+```
 ssh -T a100200x.github.com
+```
 
 - связать с репозиторием
-git remote add origin git@a100200x.github.com:a100200x/books_app.git
-
+```
+git remote add origin git@a100200x.github.com:a100200x/<...repo...>.git
+git remote set-url origin git@a100200x.github.com:a100200x/<...repo...>.git
+```
 - проверить подключение 
+```
 git remote -v
+```
 
 ## сделать первый пуш
 To push the current branch and set the remote as upstream, use
-'''
+```
 git push --set-upstream origin master
-'''
+```
  
