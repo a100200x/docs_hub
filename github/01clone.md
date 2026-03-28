@@ -60,3 +60,18 @@ To push the current branch and set the remote as upstream, use
 git push --set-upstream origin master
 ```
  
+## При открытии терминала выполнить команду
+```
+eval "$(ssh-agent -s)"
+
+ssh-add 'c:/.../.../github_a100200x/.ssh/id_ed25519_github'
+``` 
+```
+git remote -v
+```
+Чтобы запушить изменения в репозиторий, нужно выполнить команды:
+```
+ git add .
+ git commit -m 'fix github/01'
+ git push
+ ```
