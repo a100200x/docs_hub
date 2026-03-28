@@ -36,7 +36,7 @@ ssh-add "C:/.../.../github_a100200x/.ssh/id_ed25519_github"
 ssh -T a100200x.github.com
 
 - связать с репозиторием
-git remote set-url origin git@a100200x.github.com:a100200x/books_app.git
+git remote add origin git@a100200x.github.com:a100200x/books_app.git
 
 - проверить подключение 
 git remote -v
